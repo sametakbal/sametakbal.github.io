@@ -1,54 +1,90 @@
+<!DOCTYPE html>
 <html>
 
 <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <title>Samet AKBAL</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora">
+    <link rel="stylesheet" href="assets/fonts/ionicons.min.css">
+    <link rel="stylesheet" href="assets/css/Article-Clean.css">
+    <link rel="stylesheet" href="assets/css/Footer-Basic.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link rel="stylesheet" href="assets/css/Team-Presentation---2-Persons---Social-Media-Icon.css">
+    <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.1/css/all.css'>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 
-<body>
-    <center>
+<body class="text-light" style="width: 99999;height: 999999;">
+    <div class="clearfix"></div>
+    <div class="text-center article-clean">
         <div class="container">
-            <img src="img/profile.jpg" width="300" class="rounded-top" />
-            <h2 id="isim" class="text-monospace"></h2>
-            <h3 id="text" class="text-monospace"></h3>
-            <h3 id="email" class="text-monospace"></h3>
+            <div class="row">
+                <div class="col-lg-10 col-xl-8 offset-lg-1 offset-xl-2"><img class="teamprofilepictures" src="img/profile.jpg">
+                    <div class="intro">
+                        <h1 id="name" class="text-center" style="font-size: 47px;"></h1>
+                    </div>
+                    <div class="text">
+                        <p class="text-center" id="text" style="font-size: 21px;"></p>
+                        <figure>
+                            <figcaption style="font-size: 15px;">Eskişehir,Turkey</figcaption>
+                        </figure>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div>
-            <a href="https://github.com/sametakbal">
-                <img src="img/github.png" width="50" class="rounded-top">
-            </a>
-            <a href="https://www.linkedin.com/in/samet-akbal-356336112/">
-                <img src="img/linked.png" width="50" class="rounded-top">
-            </a>
-            <a href="https://www.instagram.com/samet.akbal/">
-                <img src="img/instagram.png" width="50" class="rounded-top">
+    </div>
+    <div class="social-buttons">
+        <a href="https://www.instagram.com/samet.akbal/" class="social-buttons__button social-button social-button--linkedin" aria-label="Instagram">
+            <span class="social-button__inner">
+         <i class="fab fa-instagram"></i>
+        </span>
+        </a>
+        <a href="https://www.youtube.com/user/aisV25" class="social-buttons__button social-button social-button--linkedin" aria-label="Youtube">
+            <span class="social-button__inner">
+         <i class="fab fa-youtube"></i>
+        </span>
+        </a>
+        <a href="https://www.samet.works" class="social-buttons__button social-button social-button--linkedin" aria-label="LinkedIn">
+            <span class="social-button__inner">
+         <i class="fab fa-linkedin-in"></i>
+        </span>
+        </a>
 
-            </a>
-        </div>
-    </center>
+        <a href="https://github.com/sametakbal" class="social-buttons__button social-button social-button--github" aria-label="GitHub">
+            <span class="social-button__inner">
+         <i class="fab fa-github"></i>
+        </span>
+        </a>
+        <a href="https://medium.com/@sametakbal7" class="social-buttons__button social-button social-button--medium" aria-label="Medium">
+            <span class="social-button__inner">
+         <i class="fab fa-medium"></i>
+        </span>
+        </a>
 
+    </div>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
     <script>
         $(() => typeWriter());
         var isim = "Samet AKBAL";
-        var text = "-Developer-";
+        var text = "Developer";
         var email = "me@samet.works";
         var i = 0,
             j = 0,
             k = 0;
-        var speed = 150;
+        var speed = 200;
 
         function typeWriter() {
             if (i < email.length) {
-                document.getElementById("isim").innerHTML += isim.charAt(i);
+                document.getElementById("name").innerHTML += isim.charAt(i);
                 document.getElementById("text").innerHTML += text.charAt(j);
-                document.getElementById("email").innerHTML += email.charAt(k);
                 i++;
                 j++;
-                k++;
                 setTimeout(typeWriter, speed);
             }
         }
