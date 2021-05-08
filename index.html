@@ -1,41 +1,173 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-
 <head>
-    <title>
-        JavaScript
-        | Detecting the Operating System of User.
-    </title>
+	<title>Samet AKBAL</title>
+
+
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1" />
+
+	<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
+	<link rel="icon" type="image/ico" href="images/favicon.ico">
+	<link rel="stylesheet" type="text/css" href="default.css">
+	<link id="theme-style" rel="stylesheet" type="text/css" href="">
+	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
 </head>
+<body>
 
-<body style="text-align:center;" id="body">
-    <p id="GFG_UP" style="font-size: 19px; 
-              font-weight: bold;">
-    </p>
-    <button onclick="GFG_Fun()">
-        click here
-    </button>
-    <p id="GFG_DOWN" style="color: green; 
-              font-size: 24px; 
-              font-weight: bold;">
-    </p>
-    <script>
-        HTMLDocument.prototype.e = document.getElementById;
-        var el_up = document.e("GFG_UP");
-        var el_down = document.e("GFG_DOWN");
-        el_up.innerHTML = "Click on the button to get the OS of User's System.";
-        var Name = "Not known";
-        if (navigator.appVersion.indexOf("Win") != -1) Name =
-            "Windows OS";
-        if (navigator.appVersion.indexOf("Mac") != -1) Name =
-            "MacOS";
-        if (navigator.appVersion.indexOf("Linux") != -1) Name =
-            "Linux OS";
+	<section class="s1">
+		<div class="main-container">
+			<div class="greeting-wrapper">
+				<h1>Merhaba, Ben Samet AKBAL</h1>
+			</div>
 
-        function GFG_Fun() {
-            el_down.innerHTML = Name;
-        }
-    </script>
+
+			<div class="intro-wrapper">
+				<div class="nav-wrapper">
+
+					<a href="index.html">
+						<div class="dots-wrapper">
+							<div id="dot-1" class="browser-dot"></div>
+							<div id="dot-2" class="browser-dot"></div>
+							<div id="dot-3" class="browser-dot"></div>
+						</div>
+					</a>
+					
+
+					<ul id="navigation">
+						<li><a href="mailto:samet@akbal.net">İletişim</a></li>
+
+					</ul>
+				</div>
+
+				<div class="left-column">
+					<img id="profile_pic" src="images/profile.png">
+					<h5 style="text-align: center;line-height: 0;">Tema Seç</h5>
+
+					<div id="theme-options-wrapper">
+						<div data-mode="light" id="light-mode" class="theme-dot"></div>
+						<div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+						<div data-mode="green" id="green-mode" class="theme-dot"></div>
+						<div data-mode="purple" id="purple-mode" class="theme-dot"></div>
+					</div>
+
+					<p id="settings-note">*Tema seçimi bir sonraki ziyaret<br>içinde kaydedilecektir.</p>
+				</div>
+
+				<div class="right-column">
+
+					<div id="preview-shadow">
+						<div id="preview">
+							<div id="corner-tl" class="corner"></div>
+							<div id="corner-tr" class="corner"></div>
+							<h3>Neler yapıyorum</h3>
+							<p>Spring Boot ve Vue.js ile web uygulamaları geliştiriyorum.</p>
+							<div id="corner-br" class="corner"></div>
+							<div id="corner-bl" class="corner"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s2">
+		<div class="main-container">
+
+			<div class="about-wrapper">
+				<div class="about-me">
+					<h4>Hakkımda</h4>
+
+					<p>İnönü Üniversitesi Bilgisayar Mühendisliği son sınıf öğrencisiyim. Aynı zamanda <a href="https://www.pdaccess.com/" >PDAccess</a>'de yazılım geliştirici olarak çalışıyorum. </p>
+
+					<p>Web ve mobil platformlar için uygulamalar geliştiriyorum.</p>
+
+
+					<hr>
+
+					<h4>İlgilendiklerim</h4>
+
+					<p>Öncelikli olarak Spring Boot ve Vue.js odaklı geliştiriciyim. </br><a target="_blank" href="cv.pdf">CV'mi İndir</a></p>
+
+					<div id="skills">
+						<ul>
+							<li>Java</li>
+							<li>C#</li>
+							<li>JavaScript</li>
+							<li>Vue.js</li>
+							<li>Postgresql</li>
+						</ul>
+
+						<ul>
+							<li>Flutter</li>
+							<li>Go</li>
+							<li>MSSQL</li>
+							<li>Linux</li>
+							<li>HTML/CSS</li>
+						</ul>
+
+					</div>
+
+				</div>
+				
+				<div class="social-links">
+					<img id="social_img" src="images/yt.PNG" />
+					<h3>YouTube ve Medium profillerim</h3>
+
+					<a target="_blank" href="https://www.youtube.com/c/A%C4%B0SVideolar%C4%B1/featured">YouTube: @Samet AKBAL</a>
+					<br>
+					<a target="_blank" href="https://medium.com/@sametakbal7">Medium: @sametakbal7</a>
+				</div>
+			</div>
+
+		</div>
+	</section>
+
+	<section class="s1">
+		<div class="main-container">
+			<h3 style="text-align: center;">Bazı projelerim</h3>
+
+			<div class="post-wrapper">
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/taskcore.gif">
+						<div class="post-preview">
+							<h6 class="post-title">Task Core</h6>
+							<p class="post-intro">Kanban tekniğini esas alan bir proje yönetim sistemidir. Bireysel veya Takım olarak proje yönetimi sağlar.</p>
+							<a href="https://github.com/sametakbal/taskcore">İncelemek için tıklayınız</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/blog.PNG">
+						<div class="post-preview">
+							<h6 class="post-title">Blog Sitesi</h6>
+							<p class="post-intro">Kişisel bir blog sitesi aynı zamanda nasıl yapılacağına dair bir video serim bulunmaktadır.</p>
+							<a href="https://github.com/sametakbal/MyBlog">İncelemek için tıklayınız</a>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<div class="post">
+						<img class="thumbnail" src="images/taskman.png">
+						<div class="post-preview">
+							<h6 class="post-title">TaskManager</h6>
+							<p class="post-intro">Web ve Mobil platformlar için bir görev yönetim ve planlama sistemidir.</p>
+							<a href="https://github.com/sametakbal/taskmanager">İncelemek için tıklayınız</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+	<script type="text/javascript" src="mainscript.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 </body>
-
 </html>
